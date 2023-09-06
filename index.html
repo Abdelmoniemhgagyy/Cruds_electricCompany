@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>الحجاجي</title>
+</head>
+<body>
+<div class="hgagy">
+    <div class="header">
+        <h1>الحجاجي</h1>
+        <p>لتجارة الأجهزة الكهربائية ومستلزمانها</p>
+    </div>
+<!-- Start inputs  -->
+<div class="inputs">
+    <input   type="text" id="title" placeholder="أسم الجهاز">
+    <input type="text" id="category" placeholder="النوع \ الفئة">
+    <input type="number" id="count"  placeholder="العدد">
+    <div class="price">
+        <input type="number"  onkeyup="getTotal()" id="price" placeholder=" سعر الجهاز">
+        <input type="number" onkeyup="getTotal()"  id="ads"  placeholder="تكلفة النقل">
+        <input type="number"  onkeyup="getTotal()" id="discount" placeholder="الخصم">
+        <span id="total"></span>
+    </div>
+    <button class="create" id="create">إنشاء</button>
+</div>
+<!-- End inputs -->
+<div class="outputs">
+    <div class="search">
+        <input type="text" onkeyup=" searchData(this.value) " id="search-i" placeholder="بحث" >
+        <div class="btnsearch">
+            <button onclick="searchby(this.id) " id="searchbytitle">بحث بالأسم</button>
+            <button onclick="searchby(this.id)" id="searchbycategory">بحث بالنوع</button>
+        </div>
+    </div>
+    <div id="deleteAll">
+
+    </div>
+<div class="table" id="table">
+    <table >
+        <tr>
+            <th>الرقم</th>
+            <th>أسم الجهاز</th>
+            <th>الفئة</th>
+            <th>العدد</th>
+            <th>السعر</th>
+            <th>تكلفة النقل</th>
+            <th>الخصم</th>
+            <th>الإجمالي</th>
+            <th>الحذف</th>
+            <th>التعديل</th>
+        </tr>
+
+        <tbody id="tbody">
+           
+         
+        </tbody>
+    </table>
+    
+    
+</div>
+     
+    
+
+</div>
+
+</div>   
+    <script src="main.js"></script>
+</body>
+</html>

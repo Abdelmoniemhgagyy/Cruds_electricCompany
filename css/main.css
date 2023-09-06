@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#2a009e;
+}
+body{
+    height:100vh;
+    font-family:sans-serif,Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    direction:rtl;
+}
+.hgagy{
+    width: 80%;
+    margin:20px auto ;
+}
+/* header  */
+.header {
+    text-align: center;
+    background-color: rgb(4, 66, 121);
+    margin: 20px auto;
+}
+
+.header h1{
+    margin-bottom: 10px;
+    padding-top: 11px;
+    color: white;
+}
+
+.header p {
+    font-size: 20px;
+    padding-bottom: 14px;
+    color: #ccebff;
+
+}
+
+/* end header  */
+
+/* start input  */
+/* .input{
+    margin:5px auto;
+    width:80%;
+} */
+input {
+    width:100%;
+    border:none;
+    outline: none;
+    padding:10px;
+    margin:9px auto;
+    text-align: center;
+    border-radius:8px;
+
+}
+
+input:focus{
+    background-color: #d3d2d2c9;
+    transform:scale(1.05);
+    
+}
+#title{
+    margin-top:0px;
+}
+.price{
+    width:80%;
+}
+
+.price input {
+    width: 20%;
+    margin:10px;
+}
+.price span{
+    background-color:red;
+    padding: 9px;
+    color:#fff
+}
+.price span::before {
+content: "الإجمالي : ";
+}
+
+.price span:hover{
+    font-size: 20px;
+}
+button{
+    width: 100%;
+    font-size: 20px;
+    background-color: #2a009e;
+    color: #fff;
+    padding: 8px;
+    margin: 10px 0;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 20px;
+}
+
+
+button:hover {
+    transform:scale(1.08);
+    background-color:#5724e4
+}
+
+.btnsearch{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnsearch button{
+        width:40%
+}
+
+/* table  */
+
+table{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+table button {
+    width:90%; 
+}
+
+table th{
+    font-weight: bolder;
+    letter-spacing: 1.1px;
+    font-size: 20px;
+    position: sticky;
+    top:0;
+    background-color: #befef8;
+    
+}
